@@ -1,0 +1,26 @@
+<%- include('partials/header'); %>
+
+
+
+
+    	<div>
+        <% if(key === 1){ %>
+        <div>
+          <img src="data:image/<%=post.img.contentType%>;base64,
+          <%=post.img.data.toString('base64')%>">
+        </div>
+        <% }; %>
+    		<div>
+        <h5><%= post.name %> </h5>
+        <h2><%= post.title%> </h2>
+          <p><%= post.content %> </p>
+          <p><%= post.desc %></p>
+
+
+
+</div>
+</div>
+
+
+
+<%- include('partials/footer'); %>

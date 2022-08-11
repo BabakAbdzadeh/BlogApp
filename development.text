@@ -1,0 +1,37 @@
+1. Empty files for needed pages.
+
+
+_ App.js
+_ Json
+_ views:
+	_ Pages
+	_ Temps
+_ public
+	_ css
+
+
+2. Developing the homePage with sample data.
+
+	. Header and footer are made in another pages and just need to be included.( layouts) => they must be in partials folder
+
+
+3. Developing the compose page
+
+	Storing input data in an array in app.js so we can use it for homePage posts.
+
+4. gettting data from compose page and send it to home page
+
+	1. first for 1 data to learn the dynamic
+	2. whole logic
+
+	just to remember later:
+
+		<% for( var i=0; i< posts.length; i++){ %>
+      			<h3><%=posts[i].title%></h3>
+      			<p><%=posts[i].content%></p>
+		<% } %>
+
+	posts is the array that has two keys, title and content, which passed ower to EJS file
+
+
+

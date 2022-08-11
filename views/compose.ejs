@@ -1,0 +1,35 @@
+<%-include('partials/header'); -%>
+
+<h1>Compose</h1>
+<!-- use multipart/form-data when your form includes any <input type="file"> elements -->
+<form action="/compose" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label class="form-label">Title</label>
+    <br>
+    <input class="form-control" type="text" name="postTitle">
+    <br>
+    <label class="form-label">Post</label>
+    <br>
+    <textarea class="form-control" id="w3review" name="postBody" rows="4" cols="50"></textarea>
+  </div>
+  <div>
+    <label for="name">Image Title</label>
+    <input type="text" class="form-control" id="name" placeholder="Name"
+      value="" name="name" >
+  </div>
+  <div>
+    <label for="desc">Image Description</label>
+    <textarea id="desc" class ="form-control" name="desc" value="" rows="2"
+        placeholder="Description" >
+    </textarea>
+  </div>
+  <div>
+    <label for="image">Upload Image</label>
+    <input type="file" class="btn" id="image"
+      name="image" value="" >
+  </div>
+  <button class="btn btn-primary" type="submit" >Publish</button>
+
+</form>
+
+<%-include('partials/footer'); -%>
